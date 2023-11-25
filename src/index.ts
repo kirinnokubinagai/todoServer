@@ -7,7 +7,7 @@ const app: Express = express();
 const PORT = 8000;
 
 const corsOptions = {
-  origin: "http://localhost:3000",
+  origin: process.env.CORS_ORIGIN_DOMAIN,
   optionsSuccessStatus: 200,
 };
 
